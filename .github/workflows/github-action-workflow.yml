@@ -1,0 +1,28 @@
+name: GitHub Actions Fibonacci Workflow
+on: 
+  push
+
+jobs:
+  Build-job:
+      name: Build the source
+      runs-on: ubuntu-latest
+
+      steps:
+        - run: echo "Build {{ github.repository }} source code from {{ github.ref }} "
+        
+        - name: Checkout Source
+          uses: actions/checkout@v4
+        
+        - name: Setup dotnet
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: '10.0'
+
+        - name: Restore dependencies
+          run: dotnet restore
+
+        - name: Build the solution
+          run: dotnet build --no-restore --configuration Release
+
+            
+          
