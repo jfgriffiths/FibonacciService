@@ -12,6 +12,6 @@ jobs:
       with: 
         dotnet-version: '10.0.x'
         project-path: 'FibonacciService/FibonacciService/FibonacciService.csproj'
-        workflow-name: 'github-action-workflow'
         function-name: 'svc-fibonacci'
+        workflow-name: 'github-action-workflow'
         
