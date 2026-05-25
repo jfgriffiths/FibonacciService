@@ -1,8 +1,8 @@
 name: GitHub Actions for Fibonacci Workflow
 on: 
   push:
-  branchs: 
-  - main
+    branches: 
+      - main
 
 
 jobs:
