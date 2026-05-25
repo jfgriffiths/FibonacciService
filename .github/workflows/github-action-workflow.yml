@@ -10,7 +10,7 @@ jobs:
   Build-job:
       uses: jfgriffiths/workflow-template/.github/workflows/deploy-dotnet-az-func.yml@main
       with: 
-        dotnet-version: 10.0x
-        project-path: FibonacciService/FibonacciService/FibonacciService.csproj
-        function-name: svc-fibonacci
+        dotnet-version: '10.0.x'
+        project-path: 'FibonacciService/FibonacciService/FibonacciService.csproj'
+        function-name: 'svc-fibonacci'
         
