@@ -1,4 +1,4 @@
-name: GitHub Actions for Fibonacci Workflow
+name: GitHub Actions Fibonacci Workflow
 on: 
   push:  
     branches: 
