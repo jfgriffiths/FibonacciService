@@ -1,6 +1,6 @@
 name: GitHub Actions for Fibonacci Workflow
 on: 
-  pull_request:  
+  push:  
     branches: 
       - main
       
